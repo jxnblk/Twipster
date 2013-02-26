@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "Twipster",
+  "description": "Simpler, more readable styles for Twitter.com",
+  "icons": {  "48": "icon48.png",
+              "128": "icon128.png" },
+  "version": "1.2",
+  "homepage_url": "http://jxnblk.com/twipster",
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.twitter.com/*"],
+      "css": ["twipster.css"]
+    }
+  ]
+}
