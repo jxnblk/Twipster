@@ -39,6 +39,12 @@
 .stream-item-activity-me {
   border-bottom: none !important;
 }
+
+.user-similarities-list {
+  border: 1px solid rgba(0,0,0,.1) !important;
+  overflow: hidden !important;
+}
+
     
 /* Lighten up secondary information */
 .username, .time, .time a, .metadata, .metadata button.btn-link, .metadata a, .with-icn, .with-icn:hover, .with-icn:focus, .context span, .context a.pretty-link b, .account-group span, .account-group s, .account-group strong {
