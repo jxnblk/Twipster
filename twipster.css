@@ -225,3 +225,48 @@ body {
   max-width: none !important;
 }
 
+
+/*  ----------------------------------------------------------------
+    Front Page */
+
+.front-bg {
+  display: none !important;
+}
+.front-welcome {
+  display: none !important;
+}
+
+.front-signin {
+  left: 32% !important;
+  top: 0% !important;
+  width: 36% !important;
+  background: none !important;
+  border: none !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.front-signup {
+  left: 40% !important;
+  top: 140px !important;
+  width: 20% !important;
+  height: 50px !important;
+  background: none !important;
+  border: none !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.front-signup h2 {
+  display: none !important;
+}
+
+.front-signup div.placeholding-input {
+  display: none !important;
+}
+
+.front-container .footer {
+  display: none;
+}
