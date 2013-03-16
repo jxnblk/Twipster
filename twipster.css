@@ -10,10 +10,10 @@
 
 /* Change the font used for tweets here */
 .js-tweet-text {
+  color: #444 !important;
   font-family: Georgia !important;
   font-size: 20px !important;
   line-height: 1.5 !important;
-  color: #444 !important;
   margin-bottom: 0.25em !important;
 }
 
@@ -55,8 +55,8 @@
  
 .wrapper, .wrapper-narrow, .wrapper-permalink {
   background: none !important;
-  width: 90% !important;
   max-width: 56em !important;
+  width: 90% !important;
 }
  
 .dashboard, .content-main {
@@ -65,8 +65,8 @@
 }
 
 body {
-  background-image: none !important;
   background-color: #fff !important;
+  background-image: none !important;
 }
 
 
@@ -74,21 +74,21 @@ body {
     Navigation */
 
 .global-nav {
-  width: 100% !important;
-  margin: 0 auto !important;
-  background-image: none !important;
   background-color: #333 !important;
+  background-image: none !important;
+  margin: 0 auto !important;
+  width: 100% !important;
 }
 
 .global-nav-inner {
-  width: 100% !important;
-  max-width: 56em !important;
   margin: 0 auto !important;
+  max-width: 56em !important;
+  width: 100% !important;
 }
 
 .global-nav .container {
-  width: 100% !important;
   min-width: 1rem !important;
+  width: 100% !important;
 }
 
 .topbar-tweet-btn {
@@ -100,8 +100,8 @@ body {
 }
 
 .global-nav .search-input {
-  color: #fff !important;
   background: #444 !important;
+  color: #fff !important;
 }
 
 .js-nav-links li {
@@ -132,13 +132,13 @@ body {
 }
 
 .tweet-box {
-  width: 95% !important;
   padding: 8px 2.5% !important;
+  width: 95% !important;
 }
 
 .expanding-stream-item.open {
-  margin-top: 1rem !important;
   margin-bottom: 1rem !important;
+  margin-top: 1rem !important;
   border: 1px solid rgba(0,0,0,.02) !important;
   box-shadow: 0px 1px 2px rgba(0,0,0,0.2) !important;
 }
@@ -197,8 +197,8 @@ body {
 }
 
 .profile-card.profile-header .profile-header-inner {
-  background-size: cover !important;
   background-position: center center !important;
+  background-size: cover !important;
 }
 
 .profile-card-inner {
@@ -214,11 +214,11 @@ body {
     Modals */
 
 .modal {
-  width: 90% !important;
-  max-width: 56em !important;
   left: 0 !important;
-  right: 0 !important;
   margin: 0 auto !important;
+  max-width: 56em !important;
+  right: 0 !important;
+  width: 90% !important;
 }
 
 .dm-message {
@@ -229,62 +229,51 @@ body {
 /*  ----------------------------------------------------------------
     Front Page */
 
-.front-bg {
-  display: none !important;
-}
-.front-welcome {
-  display: none !important;
-}
-
 .front-card {
-  max-width: 100% !important;
   left: 0 !important;
   margin: 0 !important;
-  position: relative !important;
   margin: 48px auto !important;
+  max-width: 100% !important;
+  position: relative !important;
 }
 
 .front-signin {
   background: none !important;
   border: none !important;
-  -webkit-box-shadow: none !important;
   -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
   box-shadow: none !important;
-  position: relative !important;
   left: auto !important;
   margin: 0 auto !important;
+  position: relative !important;
 }
 
 .front-signup {
-  left: auto !important;
-  right: auto !important;
-  top: auto !important;
-  width: auto !important;
-  position: relative !important;
   background: none !important;
   border: none !important;
-  -webkit-box-shadow: none !important;
   -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
   box-shadow: none !important;
+  left: auto !important;
   margin: 0 auto !important;
+  position: relative !important;
+  right: auto !important;
+  top: auto !important;
   width: 300px !important;
+  width: auto !important;
 }
 
 .front-signup .btn {
-  margin: 0 auto !important;
   left: auto !important;
+  margin: 0 auto !important;
   right: auto !important;
   width: auto !important;
 }
 
-.front-signup h2 {
-  display: none !important;
-}
-
-.front-signup div.placeholding-input {
-  display: none !important;
-}
-
-.front-container .footer {
+.front-signup h2,
+.front-signup div.placeholding-input,
+.front-container .footer,
+.front-welcome,
+.front-bg {
   display: none !important;
 }
