@@ -133,7 +133,17 @@ body {
 
 .tweet-box {
   width: 95% !important;
+  height: auto !important;
+  min-height: 80px !important;
   padding: 8px 2.5% !important;
+}
+
+.tweet-form.has-preview.has-thumbnail .tweet-box {
+padding-bottom: 80px !important;
+}
+
+.tweet-form .thumbnail-container {
+  width: auto !important;
 }
 
 .expanding-stream-item.open {
@@ -271,5 +281,4 @@ body {
   width: auto !important;
   position: relative !important;
 }
-
 
