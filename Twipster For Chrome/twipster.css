@@ -236,27 +236,45 @@ body {
   display: none !important;
 }
 
+.front-card {
+  max-width: 100% !important;
+  left: 0 !important;
+  margin: 0 !important;
+  position: relative !important;
+  margin: 48px auto !important;
+}
+
 .front-signin {
-  left: 32% !important;
-  top: 0% !important;
-  width: 36% !important;
   background: none !important;
   border: none !important;
   -webkit-box-shadow: none !important;
   -moz-box-shadow: none !important;
   box-shadow: none !important;
+  position: relative !important;
+  left: auto !important;
+  margin: 0 auto !important;
 }
 
 .front-signup {
-  left: 40% !important;
-  top: 140px !important;
-  width: 20% !important;
-  height: 50px !important;
+  left: auto !important;
+  right: auto !important;
+  top: auto !important;
+  width: auto !important;
+  position: relative !important;
   background: none !important;
   border: none !important;
   -webkit-box-shadow: none !important;
   -moz-box-shadow: none !important;
   box-shadow: none !important;
+  margin: 0 auto !important;
+  width: 300px !important;
+}
+
+.front-signup .btn {
+  margin: 0 auto !important;
+  left: auto !important;
+  right: auto !important;
+  width: auto !important;
 }
 
 .front-signup h2 {
@@ -268,5 +286,5 @@ body {
 }
 
 .front-container .footer {
-  display: none;
+  display: none !important;
 }
