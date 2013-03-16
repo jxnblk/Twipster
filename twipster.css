@@ -26,7 +26,7 @@
 
 
 /* Hide things */
-.trends, .topics, .bird-topbar-etched, .wtf-module, .site-footer, .mini-profile, .enhanced-media-thumbnails, .expand-action-wrapper, .close-all-tweets, .content-header, .expand-stream-item, .collapse-stream-item, .details.with-icn i, .list-link .chev-right, .dashboard .avatar-row, .dashboard .media-row, .promptbird, .promoted-tweet {
+.trends, .topics, .bird-topbar-etched, .wtf-module, .site-footer, .mini-profile, .enhanced-media-thumbnails, .expand-action-wrapper, .close-all-tweets, .content-header, .expand-stream-item, .collapse-stream-item, .details.with-icn i, .list-link .chev-right, .dashboard .avatar-row, .dashboard .media-row, .promptbird, .promoted-tweet, .front-signup div.placeholding-input, .front-container .footer, .front-bg, .front-welcome {
   display: none !important;
 }
 
@@ -229,13 +229,6 @@ body {
 /*  ----------------------------------------------------------------
     Front Page */
 
-.front-bg {
-  display: none !important;
-}
-.front-welcome {
-  display: none !important;
-}
-
 .front-card {
   max-width: 100% !important;
   left: 0 !important;
@@ -260,31 +253,23 @@ body {
   right: auto !important;
   top: auto !important;
   width: auto !important;
+  height: 100px !important;
   position: relative !important;
   background: none !important;
-  border: none !important;
   -webkit-box-shadow: none !important;
   -moz-box-shadow: none !important;
   box-shadow: none !important;
-  margin: 0 auto !important;
+  margin: 20px auto !important;
   width: 300px !important;
+  border: 1px solid #e2e2e2 !important;
 }
 
-.front-signup .btn {
-  margin: 0 auto !important;
+.signup-btn {
+  margin: 15px 10px !important;
   left: auto !important;
   right: auto !important;
   width: auto !important;
+  position: relative !important;
 }
 
-.front-signup h2 {
-  display: none !important;
-}
 
-.front-signup div.placeholding-input {
-  display: none !important;
-}
-
-.front-container .footer {
-  display: none !important;
-}
