@@ -5,6 +5,6 @@
     "version": "0.1", 
     "fullName": "twipster-firefox", 
     "id": "jid1-Pg3RX2if6GMfrw", 
-    "description": "Strips down twitter website to a more minimal style",
+    "description": "Friefox browser addon for simpler and more readable Twitter styles.",
 		"icon": "data/icon48.png"
 }
