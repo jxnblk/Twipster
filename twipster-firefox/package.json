@@ -1,9 +1,10 @@
 {
     "name": "twipster-firefox", 
     "license": "MPL 2.0", 
-    "author": "", 
+    "author": "Mahmoud El-Badry", 
     "version": "0.1", 
     "fullName": "twipster-firefox", 
     "id": "jid1-Pg3RX2if6GMfrw", 
-    "description": "a basic add-on"
+    "description": "Strips down twitter website to a more minimal style",
+		"icon": "data/icon48.png"
 }
