@@ -17,7 +17,8 @@
     {
       "matches": ["*://*.twitter.com/*"],
       "css": ["twipster.css"],
-      "js": ["jquery.min.js", "twipster.js"]
+      "js": ["jquery.min.js", "twipster.js"],
+      "run_at": "document_end"
     }
   ]
 }

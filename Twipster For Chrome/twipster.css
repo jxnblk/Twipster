@@ -11,11 +11,16 @@
 /* Change the font used for tweets here */
 .js-tweet-text {
   font-family: Georgia !important;
-  /* font-size: 20px !important; */
+  font-size: 20px !important;
   line-height: 1.5 !important;
   color: #444 !important;
   margin-bottom: 0.25em !important;
 }
+body.tfs-16 .js-tweet-text { font-size: 16px !important; }
+body.tfs-18 .js-tweet-text { font-size: 18px !important; }
+body.tfs-20 .js-tweet-text { font-size: 20px !important; }
+body.tfs-22 .js-tweet-text { font-size: 22px !important; }
+body.tfs-24 .js-tweet-text { font-size: 24px !important; }
 
 
 /* Readable compose fields */
