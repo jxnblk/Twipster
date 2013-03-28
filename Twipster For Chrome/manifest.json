@@ -7,11 +7,17 @@
               "128": "icon128.png" },
   "version": "1.3",
   "homepage_url": "http://jxnblk.com/twipster",
+  "options_page": "options.html",
+  "background": {
+    "scripts": ["events.js"],
+    "persistent": false
+  },
 
   "content_scripts": [
     {
       "matches": ["*://*.twitter.com/*"],
-      "css": ["twipster.css"]
+      "css": ["twipster.css"],
+      "js": ["jquery.min.js", "twipster.js"]
     }
   ]
 }

@@ -11,7 +11,7 @@
 /* Change the font used for tweets here */
 .js-tweet-text {
   font-family: Georgia !important;
-  font-size: 20px !important;
+  /* font-size: 20px !important; */
   line-height: 1.5 !important;
   color: #444 !important;
   margin-bottom: 0.25em !important;
