@@ -11,15 +11,16 @@
   .wrap {
     width: 90%;
     margin: 2rem auto;
-    max-width: 30rem;}
+    max-width: 30rem;
+    overflow: auto;}
   h1 { margin-bottom: 1rem; }
   h2 { margin-bottom: .5rem; }
   .seg-ctrl {
     list-style: none;
-    background-color: #eee;
     border-radius: .125rem;
     overflow: auto;
-    float: left;}
+    float: left;
+    margin-bottom: 1rem;}
     .seg-ctrl li {
       float: left;}
       .seg-ctrl li a {
@@ -31,6 +32,18 @@
         padding: 0 2rem;}
         .seg-ctrl li a:hover { background-color: #237299; }
         .seg-ctrl li a.active { background-color: #34a9de; }
+  .toast {
+    width: 50%;
+    min-height: 3rem;
+    line-height: 2rem;
+    padding: .5rem 1rem;
+    margin-left: -25%;
+    background: #eee;
+    border-radius: .125rem;
+    position: absolute;
+    top: 4rem;
+    left: 50%;
+    z-index: 1000;}
         
 </style>
 
@@ -47,8 +60,12 @@
     <li><a href="#" id="fs-22" class="set-font-size">22</a></li>
     <li><a href="#" id="fs-24" class="set-font-size">24</a></li>
   </ul>
-  
+
 </div>
+
+<div class="toast">
+</div>
+
 </body>
 <script src="options.js"></script>
 </html>

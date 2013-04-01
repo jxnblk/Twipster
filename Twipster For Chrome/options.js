@@ -5,7 +5,7 @@
 
 // Retrieve settings from localStorage
 var storedFontSize = localStorage["twipsterFontSize"];
-if (!storedFontSize){
+if (storedFontSize == ""){
   localStorage["twipsterFontSize"] = 20; 
 }
 $("#fs-" + storedFontSize).addClass("active");
@@ -18,6 +18,7 @@ $(".set-font-size").click(function(){
   var twipsterFontSize = $(this).text();
   localStorage["twipsterFontSize"] = twipsterFontSize;
   console.log(twipsterFontSize);
+  $(".toast").text("Settings Updated. Refresh Twitter.com to see the changes.").show();
 });
 
 
