@@ -225,8 +225,8 @@ padding-bottom: 80px !important;
   color: #fff !important;
 }
 
-.signup-call-out div.flex-module div.holding {display: inline-block;}
-.signup-call-out div.flex-module div.holding input {width: 200px;}
+.signup-call-out div.flex-module div.holding {display: inline-block !important;}
+.signup-call-out div.flex-module div.holding input {width: 200px !important;}
 
 /*  ----------------------------------------------------------------
     Modals */
