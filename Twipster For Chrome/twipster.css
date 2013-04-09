@@ -15,6 +15,9 @@
   line-height: 1.5 !important;
   color: #444 !important;
   margin-bottom: 0.25em !important;
+  -webkit-transition: all .1s linear !important;
+  /* -webkit-transform: scale(0.8) !important; */
+  opacity: .5 !important;
 }
 body.tfs-16 .js-tweet-text { font-size: 16px !important; }
 body.tfs-18 .js-tweet-text { font-size: 18px !important; }
