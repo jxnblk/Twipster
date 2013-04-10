@@ -13,9 +13,9 @@ $(document).ready(function(){
     if (response.status){
       var twipsterTheme = response.status;
     } else {
-      var twipsterTheme = minimal;
+      var twipsterTheme = dark;
     };
-    //$("<style id='twipster-settings' type='text/css'>.js-tweet-text { font-size: " + twipsterFontSize + "px !important; opacity: 1 !important; }</style>").appendTo("head");
+    $("body").addClass("theme-" + twipsterTheme); 
   });
 
 });
