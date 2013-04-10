@@ -7,22 +7,44 @@
     font-size: 100%;
     font-family: Hevletica, sans-serif;
     font-weight: 700;
-    color: #444;}
+    color: #1a546f;
+    background-color: #eee;}
+  a {
+    text-decoration: none;
+    color: #34a9de;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  @-webkit-keyframes popin {
+    0% {    -webkit-transform: scale(.5); }
+    80% {   -webkit-transform: scale(1.1); }
+    100% {  -webkit-transform: scale(1); }}
   .wrap {
     width: 90%;
     margin: 2rem auto;
-    max-width: 30rem;
+    max-width: 56rem;
     overflow: auto;}
+  .header {
+    overflow: auto;
+    margin-bottom: 2rem;
+  }
+  .logo {
+    width: 6rem;
+    height: 6rem;
+    float: left;
+    margin-right: 1rem;
+  }
   h1 { margin-bottom: 1rem; }
   h2 { margin-bottom: .5rem; }
   .seg-ctrl {
     list-style: none;
     border-radius: .125rem;
     overflow: auto;
-    float: left;
+    /* float: left; */
     margin-bottom: 1rem;}
     .seg-ctrl li {
-      float: left;}
+      /* float: left; */}
       .seg-ctrl li a {
         text-decoration: none;
         display: block;
@@ -32,40 +54,87 @@
         padding: 0 2rem;}
         .seg-ctrl li a:hover { background-color: #237299; }
         .seg-ctrl li a.active { background-color: #34a9de; }
+        
+  
   .toast {
-    width: 50%;
+    margin-left: 7rem;
     min-height: 3rem;
-    line-height: 2rem;
-    padding: .5rem 1rem;
-    margin-left: -25%;
+    /* line-height: 2rem; */
+    padding: 1rem;
     background: #eee;
     border-radius: .125rem;
-    position: absolute;
-    top: 4rem;
-    left: 50%;
-    z-index: 1000;}
+    /* display: none; */
+    -webkit-animation: popin .1s; }
+  .font-size-example {
+    background-color: #fff;
+    padding: 12px;
+    border-radius: .125rem;
+  }
+  .example-tweet {
+    font-weight: normal;
+    color: #333;
+    margin: 12px 0;
+  }
+  .example-tweet-avatar {
+    float: left;
+    width: 48px;
+    margin-top: 4px;
+    margin-right: 10px;
+  }
+  .example-fullname,
+  .example-username {
+    color: #aaa;
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .example-tweet-text {
+    font-family: Georgia;
+    line-height: 1.5;
+    margin-left: 58px;
+  }
+  
         
 </style>
 
 <body>
 <div class="wrap">
-  <img src="icon128.png" class="logo">
-  <h1>Twipster Options</h1>
+  <header class="header">
+    <img src="icon.svg" class="logo">
+    <div class="toast">
+      Sample test text.
+    </div>
+  </header>
+
+
+  <!-- <h1>Twipster Options</h1> -->
   
-  <h2>Font Size:</h2>
+  <h2>Font Size</h2>
   <ul class="seg-ctrl">
-    <li><a href="#" id="fs-16" class="set-font-size">16</a></li>
-    <li><a href="#" id="fs-18" class="set-font-size">18</a></li>
-    <li><a href="#" id="fs-20" class="set-font-size">20</a></li>
-    <li><a href="#" id="fs-22" class="set-font-size">22</a></li>
-    <li><a href="#" id="fs-24" class="set-font-size">24</a></li>
+    <li><a href="#" id="fs-16" class="set-font-size" data-font-size="16">Modest 16px</a></li>
+    <li><a href="#" id="fs-20" class="set-font-size" data-font-size="20">Standard 20px</a></li>
+    <li><a href="#" id="fs-24" class="set-font-size" data-font-size="24">Glorious 24px</a></li>
   </ul>
+  
+  <h2>Theme</h2>
+  <ul class="seg-ctrl">
+    <li><a href="#" id="theme-minimal" class="set-theme" data-theme="minimal">Minimal</a></li>
+    <li><a href="#" id="theme-night" class="set-theme" data-theme="night">Night Mode</a></li>
+  </ul>
+  
+  <div class="font-size-example">
+    <h3>Preview:</h3>
+    <div class="example-tweet">
+      <img src="icon.svg" class="example-tweet-avatar" />
+      <strong class="example-fullname">Horse Twipster</strong> <span class="example-username">@horse_twipster</span>
+      <p class="example-tweet-text">Shimpler, readabler twitterer <a href="http://jxnblk.com/twipster">jxnblk.com/twipster</a></p>
+    </div>
+  </div>
 
 </div>
 
-<div class="toast">
-</div>
+
 
 </body>
+<script src="jquery.min.js"></script>
 <script src="options.js"></script>
 </html>
