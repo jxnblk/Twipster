@@ -28,28 +28,6 @@ $('.set-font-size').click(function(){
   //$('.toast').text('Settings Updated. Refresh Twitter.com to see the changes.').show().delay(3000).fadeOut(800);
 });
 
-// Theme
-// Retrieve theme from localStorage
-var storedTheme = localStorage['twipsterTheme'];
-if (storedFontSize == ''){
-  localStorage['twipsterTheme'] = 'minimal'; 
-}
-
-// Display current theme settings
-$('#theme-' + storedTheme).addClass('active');
-$('.example-tweet-text').addClass('.theme-' + storedTheme);
-
-// Set new theme value
-$('.set-theme').click(function(){
-  $('.set-theme').removeClass('active');
-  $(this).addClass('active');
-  var twipsterTheme = $(this).attr('data-theme');
-  localStorage['twipsterTheme'] = twipsterTheme;
-  console.log(twipsterTheme);
-  $('.example-tweet-text').addClass('.theme-' + storedTheme);
-  updateToast('Theme Updated. Refresh Twitter.com to see the changes.');
-});
-
 
 
 
