@@ -15,14 +15,8 @@
   color: #444 !important;
   margin-bottom: 0.25em !important;
   -webkit-transition: all .1s linear !important;
-  /* -webkit-transform: scale(0.8) !important; */
   opacity: .5 !important;
 }
-body.tfs-16 .js-tweet-text { font-size: 16px !important; }
-body.tfs-18 .js-tweet-text { font-size: 18px !important; }
-body.tfs-20 .js-tweet-text { font-size: 20px !important; }
-body.tfs-22 .js-tweet-text { font-size: 22px !important; }
-body.tfs-24 .js-tweet-text { font-size: 24px !important; }
 
 
 /* Readable compose fields */
@@ -201,6 +195,10 @@ padding-bottom: 80px !important;
 
 .content-main .in-reply-to {
   background: #fcfcfc !important;
+}
+
+.tweet-row {
+  max-width: 100% !important;
 }
 
 

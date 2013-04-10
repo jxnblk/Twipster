@@ -15,8 +15,7 @@
     a:hover {
       text-decoration: underline;}
   @-webkit-keyframes popin {
-    0% {    -webkit-transform: scale(.5); }
-    80% {   -webkit-transform: scale(1.1); }
+    0% {    -webkit-transform: scale(.6); }
     100% {  -webkit-transform: scale(1); }}
   .wrap {
     width: 90%;
@@ -37,10 +36,10 @@
     list-style: none;
     border-radius: .125rem;
     overflow: auto;
-    /* float: left; */
+    display: inline-block;
     margin-bottom: 1rem;}
     .seg-ctrl li {
-      /* float: left; */}
+      float: left;}
       .seg-ctrl li a {
         text-decoration: none;
         display: block;
@@ -49,7 +48,12 @@
         line-height: 3rem;
         padding: 0 2rem;}
         .seg-ctrl li a:hover { background-color: #237299; }
-        .seg-ctrl li a.active { background-color: #34a9de; }     
+        .seg-ctrl li a.active { background-color: #34a9de; }
+        @media screen and (max-width: 512px){
+          .seg-ctrl li {
+            float: none;
+          }
+        }
   .toast {
     margin-left: 7rem;
     min-height: 3rem;
@@ -57,8 +61,18 @@
     background-color: #fff;
     border-radius: .125rem;
     display: none;
-    -webkit-animation: popin .1s; }
+    position: relative;
+    -webkit-animation: popin .2s ease; }
+    .toast::before {
+      position: absolute;
+      left: -8px;
+      border-right: 8px solid #fff;
+      border-top: 8px solid rgba(255,255,255,0);
+      border-bottom: 8px solid rgba(255,255,255,0);
+      content: "";
+    }
   .example {
+    
     background-color: #fff;
     padding: 12px;
     border-radius: .125rem;}
@@ -84,15 +98,13 @@
 
 <body>
 <div class="wrap">
+  
   <header class="header">
     <img src="icon.svg" class="logo">
     <div class="toast">
       Sample test text.
     </div>
   </header>
-
-
-  <!-- <h1>Twipster Options</h1> -->
   
   <h2>Font Size</h2>
   <ul class="seg-ctrl">
@@ -111,8 +123,6 @@
   </div>
 
 </div>
-
-
 
 </body>
 <script src="jquery.min.js"></script>

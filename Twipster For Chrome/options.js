@@ -1,7 +1,8 @@
 
 // Update toast
 var updateToast = function(toastText){
-  $('.toast').text(toastText).show().delay(3000).fadeOut(800);
+  $('.toast').hide();
+  $('.toast').text(toastText).fadeIn(400).delay(3000).fadeOut(800);
 };
 
 
@@ -23,9 +24,8 @@ $('.set-font-size').click(function(){
   $(this).addClass('active');
   var twipsterFontSize = $(this).attr('data-font-size');
   localStorage['twipsterFontSize'] = twipsterFontSize;
-  $('.example-tweet-text').css( "font-size", twipsterFontSize );
+  $('.example-tweet-text').css('font-size', twipsterFontSize);
   updateToast('Font Size Updated. Refresh Twitter.com to see the changes.');
-  //$('.toast').text('Settings Updated. Refresh Twitter.com to see the changes.').show().delay(3000).fadeOut(800);
 });
 
 
