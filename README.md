@@ -1,6 +1,6 @@
 Twipster
 ========
 
-Safari and Chrome browser extensions for simpler and more readable Twitter styles.
+Safari and Chrome and Firefox browser extensions for simpler and more readable Twitter styles.
 
 ![Twipster Screenshot](screenshot.png)
