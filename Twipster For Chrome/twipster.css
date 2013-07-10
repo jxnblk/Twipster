@@ -230,6 +230,11 @@ padding-bottom: 80px !important;
   color: #fff !important;
 }
 
+.profile-banner-footer .list-button {
+  float: right !important;
+  margin: 10px 10px 10px 0 !important;
+}
+
 
 /*  ----------------------------------------------------------------
     Modals */
@@ -292,4 +297,3 @@ padding-bottom: 80px !important;
   width: auto !important;
   position: relative !important;
 }
-
