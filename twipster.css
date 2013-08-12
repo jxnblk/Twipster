@@ -17,35 +17,37 @@
   margin-bottom: 0.25em !important;
 }
 
-
 /* Readable compose fields */
 .tweet-box {
   font-size: 18px !important;
   line-height: 24px !important;
 }
 
+body {
+  background-image: none !important;
+  background-color: #fff !important;
+}
 
 /* Hide things */
 .trends, .topics, .bird-topbar-etched, .wtf-module, .site-footer, .mini-profile, .enhanced-media-thumbnails, .expand-action-wrapper, .close-all-tweets, .content-header, .expand-stream-item, .collapse-stream-item, .details.with-icn i, .list-link .chev-right, .dashboard .avatar-row, .dashboard .media-row, .promptbird, .promoted-tweet, .front-signup div.placeholding-input, .front-container .footer, .front-bg, .front-welcome {
   display: none !important;
 }
 
-    
-/* Tweets Without Borders */
-.stream-item, .tweet, .stream-loading, .stream-end, .new-tweets-bar, .module {
+/* Remove Borders */
+.stream-item, .tweet, .stream-loading, .stream-end, .new-tweets-bar, .module, .module .list-link, .front-signin, .stream-item-activity-me {
   border: none !important;
 }
 
-.stream-item-activity-me {
-  border-bottom: none !important;
+/* Remove Box Shadows */
+.topbar, .new-tweets-bar, .front-signin, .front-signup, .stream .tweet:hover .tweet-actions {
+  box-shadow: none !important;
 }
 
-.user-similarities-list {
-  border: 1px solid rgba(0,0,0,.1) !important;
-  overflow: hidden !important;
+/* Remove Backgrounds */
+.wrapper, .wrapper-narrow, .wrapper-permalink, .module .list-link, .front-signin, .front-signup, .stream .tweet:hover .tweet-actions {
+  background: none !important;
 }
-
-    
+   
 /* Lighten up secondary information */
 .username, .time, .time a, .metadata, .metadata button.btn-link, .metadata a, .with-icn, .with-icn:hover, .with-icn:focus, .context span, .context a.pretty-link b, .account-group span, .account-group s, .account-group strong {
   color: #aaa !important;
@@ -58,21 +60,18 @@
 .wrapper-settings .content-header {
   display: block !important;
 }
- 
+
 .wrapper, .wrapper-narrow, .wrapper-permalink {
-  background: none !important;
   width: 90% !important;
   max-width: 56em !important;
 }
- 
-.dashboard, .content-main {
-  float: none !important;
+
+.dashboard, .content-main, .global-nav, .global-nav-inner, .global-nav .container, .profile-card.profile-header, .profile-header-inner-overlay {
   width: 100% !important;
 }
 
-body {
-  background-image: none !important;
-  background-color: #fff !important;
+.dashboard, .content-main {
+  float: none !important;
 }
 
 
@@ -80,29 +79,22 @@ body {
     Navigation */
 
 .global-nav {
-  width: 100% !important;
   margin: 0 auto !important;
   background-image: none !important;
   background-color: #333 !important;
 }
 
 .global-nav-inner {
-  width: 100% !important;
   max-width: 56em !important;
   margin: 0 auto !important;
 }
 
 .global-nav .container {
-  width: 100% !important;
   min-width: 1rem !important;
 }
 
 .topbar-tweet-btn {
   margin-right: 0px !important;
-}
-
-.topbar {
-  box-shadow: none !important;
 }
 
 .global-nav .search-input {
@@ -114,11 +106,6 @@ body {
   display: inline-block !important;
 }
 
-.module .list-link {
-  background: none !important;
-  border: none !important;
-}
-
 
 /*  ----------------------------------------------------------------
     Tweets */
@@ -126,14 +113,9 @@ body {
 .new-tweets-bar {
   background: #f2fafc !important;
   border-radius: .25rem !important;
-  box-shadow: none !important;
 }
 
-.tweet:hover {
-  background: #fff !important;
-}
-
-.permalink-tweet, .permalink-tweet:hover {
+.tweet:hover, .permalink-tweet, .permalink-tweet:hover {
   background: #fff !important;
 }
 
@@ -145,7 +127,7 @@ body {
 }
 
 .tweet-form.has-preview.has-thumbnail .tweet-box {
-padding-bottom: 80px !important;
+  padding-bottom: 80px !important;
 }
 
 .tweet-form .thumbnail-container {
@@ -175,13 +157,21 @@ padding-bottom: 80px !important;
   background-position: -280px -190px !important;
 }
 
-.permalink-tweet .sm-reply, .permalink-tweet:hover .sm-reply, .permalink-tweet.focus .sm-reply { background-position: 0 -280px !important; }
+.permalink-tweet .sm-reply, .permalink-tweet:hover .sm-reply, .permalink-tweet.focus .sm-reply {
+  background-position: 0 -280px !important;
+}
 
-.permalink-tweet .sm-rt, .permalink-tweet:hover .sm-rt, .permalink-tweet.focus .sm-rt { background-position: -30px -280px !important; }
+.permalink-tweet .sm-rt, .permalink-tweet:hover .sm-rt, .permalink-tweet.focus .sm-rt {
+  background-position: -30px -280px !important;
+}
 
-.permalink-tweet .sm-fav, .permalink-tweet:hover .sm-fav, .permalink-tweet.focus .sm-fav { background-position: -60px -280px !important; }
+.permalink-tweet .sm-fav, .permalink-tweet:hover .sm-fav, .permalink-tweet.focus .sm-fav {
+  background-position: -60px -280px !important;
+}
 
-.permalink-tweet .sm-more, .permalink-tweet:hover .sm-more { background-position: -180px -280px !important; }
+.permalink-tweet .sm-more, .permalink-tweet:hover .sm-more {
+  background-position: -180px -280px !important;
+}
 
 .tweet .sm-reply, .tweet .sm-rt, .tweet .sm-fav, .tweet .sm-image, .tweet .sm-video, .tweet .sm-audio, .tweet .sm-geo, .tweet .sm-in, .tweet .sm-trash, .tweet .sm-more, .tweet .sm-page, .tweet .sm-embed, .tweet .sm-summary, .tweet .sm-chat, .timelines-navigation .active .profile-nav-icon, .timelines-navigation .profile-nav-icon:hover, .timelines-navigation .profile-nav-link:focus .profile-nav-icon, .sm-top-tweet, .metadata a.tweet-geo-text:hover .sm-geo, .discover-item .js-action-card-search:hover .sm-search, .discover-item .js-action-card-search:focus .sm-search {
   background-color:  #aaa !important;
@@ -202,14 +192,6 @@ padding-bottom: 80px !important;
 
 .profile-card {
   border: 1px solid rgba(0,0,0,.1) !important;
-}
-
-.profile-card.profile-header {
-  width: 100% !important;
-}
-
-.profile-header-inner-overlay {
-  width: 100% !important;
 }
 
 .profile-card.profile-header .profile-header-inner {
@@ -245,46 +227,27 @@ padding-bottom: 80px !important;
 /*  ----------------------------------------------------------------
     Front Page */
 
+.front-card, .front-sign-in, .front-signup, .signup-btn {
+  position: relative !important;
+  left: 0 !important;
+}
+
 .front-card {
   max-width: 100% !important;
-  left: 0 !important;
-  margin: 0 !important;
-  position: relative !important;
   margin: 48px auto !important;
 }
 
 .front-signin {
-  background: none !important;
-  border: none !important;
-  -webkit-box-shadow: none !important;
-  -moz-box-shadow: none !important;
-  box-shadow: none !important;
-  position: relative !important;
-  left: auto !important;
   margin: 0 auto !important;
 }
 
 .front-signup {
-  left: auto !important;
-  right: auto !important;
-  top: auto !important;
-  width: auto !important;
-  height: 100px !important;
-  position: relative !important;
-  background: none !important;
-  -webkit-box-shadow: none !important;
-  -moz-box-shadow: none !important;
-  box-shadow: none !important;
-  margin: 20px auto !important;
-  width: 300px !important;
-  border: 1px solid #e2e2e2 !important;
+  top: 0 !important;
+  max-height: 100px !important;
+  margin: 40px auto !important;
+  border: none !important;
 }
 
 .signup-btn {
   margin: 15px 10px !important;
-  left: auto !important;
-  right: auto !important;
-  width: auto !important;
-  position: relative !important;
 }
-
