@@ -15,7 +15,6 @@
   color: #444 !important;
   margin-bottom: 0.25em !important;
   -webkit-transition: all .1s linear !important;
-  opacity: .5 !important;
 }
 
 
@@ -27,7 +26,7 @@
 
 
 /* Hide things */
-.trends, .topics, .bird-topbar-etched, .wtf-module, .site-footer, .mini-profile, .enhanced-media-thumbnails, .expand-action-wrapper, .close-all-tweets, .content-header, .expand-stream-item, .collapse-stream-item, .details.with-icn i, .list-link .chev-right, .dashboard .avatar-row, .dashboard .media-row, .promptbird, .promoted-tweet, .front-signup div.placeholding-input, .front-container .footer, .front-bg, .front-welcome {
+.trends, .topics, .bird-topbar-etched, .wtf-module, .site-footer, .mini-profile, .enhanced-media-thumbnails, .expand-action-wrapper, .close-all-tweets, .content-header, .expand-stream-item, .collapse-stream-item, .details.with-icn i, .list-link .chev-right, .dashboard .avatar-row, .dashboard .media-row, .promptbird, .promoted-tweet, .front-signup div.placeholding-input, .front-container .footer, .front-bg, .front-welcome, .media-thumbnail.is-preview, .details {
   display: none !important;
 }
 
@@ -188,17 +187,28 @@ padding-bottom: 80px !important;
   background-color:  #aaa !important;
 }
 
-.tweet-actions a {
-  margin-left: 0 !important;
-  margin-right: 8px !important;
-}
-
 .content-main .in-reply-to {
   background: #fcfcfc !important;
 }
 
 .tweet-row {
   max-width: 100% !important;
+}
+
+.tweet-actions {
+  opacity: 0 !important;
+  transition: opacity .2s ease;
+}
+
+.tweet:hover .tweet-actions {
+  box-shadow: none !important;
+  background: none !important;
+  opacity: 1 !important;
+}
+
+.tweet-actions a {
+  margin-left: 0 !important;
+  margin-right: 8px !important;
 }
 
 
