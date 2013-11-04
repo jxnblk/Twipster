@@ -26,7 +26,7 @@
 
 
 /* Hide things */
-.trends, .topics, .bird-topbar-etched, .wtf-module, .site-footer, .mini-profile, .enhanced-media-thumbnails, .expand-action-wrapper, .close-all-tweets, .content-header, .expand-stream-item, .collapse-stream-item, .details.with-icn i, .list-link .chev-right, .dashboard .avatar-row, .dashboard .media-row, .promptbird, .promoted-tweet, .front-signup div.placeholding-input, .front-container .footer, .front-bg, .front-welcome {
+.trends, .topics, .bird-topbar-etched, .wtf-module, .site-footer, .mini-profile, .enhanced-media-thumbnails, .expand-action-wrapper, .close-all-tweets, .content-header, .expand-stream-item, .collapse-stream-item, .details.with-icn i, .list-link .chev-right, .dashboard .avatar-row, .dashboard .media-row, .promptbird, .promoted-tweet, .front-signup div.placeholding-input, .front-container .footer, .front-bg, .front-welcome, .media-thumbnail.is-preview {
   display: none !important;
 }
 
@@ -185,6 +185,16 @@ padding-bottom: 80px !important;
 
 .tweet .sm-reply, .tweet .sm-rt, .tweet .sm-fav, .tweet .sm-image, .tweet .sm-video, .tweet .sm-audio, .tweet .sm-geo, .tweet .sm-in, .tweet .sm-trash, .tweet .sm-more, .tweet .sm-page, .tweet .sm-embed, .tweet .sm-summary, .tweet .sm-chat, .timelines-navigation .active .profile-nav-icon, .timelines-navigation .profile-nav-icon:hover, .timelines-navigation .profile-nav-link:focus .profile-nav-icon, .sm-top-tweet, .metadata a.tweet-geo-text:hover .sm-geo, .discover-item .js-action-card-search:hover .sm-search, .discover-item .js-action-card-search:focus .sm-search {
   background-color:  #aaa !important;
+}
+
+.tweet-actions {
+  opacity: 0 !important;
+  transition: opacity .2s ease;
+}
+.tweet:hover .tweet-actions {
+  box-shadow: none !important;
+  background: none !important;
+  opacity: 1 !important;
 }
 
 .tweet-actions a {
