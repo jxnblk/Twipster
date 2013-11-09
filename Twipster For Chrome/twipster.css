@@ -137,6 +137,10 @@ body {
   background: #fff !important;
 }
 
+.tweet {
+  padding: 16px 12px !important;
+}
+
 .tweet-box {
   width: 95% !important;
   height: auto !important;
