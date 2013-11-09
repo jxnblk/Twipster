@@ -1,0 +1,77 @@
+// Twipster
+
+@import "basscss";
+
+.helvetica { font-family: Helvetica, Arial, sans-serif; }
+.georgia { font-family: Georgia, serif; }
+.square2 { width: 2em; height: 2em; }
+.full-width { width: 100%; }
+
+// Partially responsive padding
+@media (min-width: 896px) {
+  .p2 { padding: 4*$space; }
+  .px2 { padding-right: 4*$space;  padding-left: 4*$space; }
+}
+
+.btn {
+  font-weight: bold;
+  display: inline-block;
+  line-height: 3;
+  padding-right: $space;
+  padding-left: $space;
+  border-radius: .25*$space;
+}
+
+.tiles {
+  overflow: hidden;
+  margin-right: -$space;
+}
+
+.tile {
+  float: left;
+  width: 100%;
+  margin-right: $space;
+  @media (min-width: 512px) {
+    width: calc(50% - #{$space});
+  }
+}
+
+// Theme
+
+$blue: #34a9de;
+$dark-blue: #1a546f;
+$light-gray: #e0e6ef;
+$mid-gray: #aaa;
+$dark-gray: #444;
+
+a {
+  color: $blue;
+  text-decoration: none;
+  &:hover {
+    color: saturate($blue, 30%);
+  }
+}
+
+.white { color: white; }
+.blue { color: $blue; }
+.dark-blue { color: $dark-blue; }
+.light-gray { color: $light-gray; }
+.mid-gray { color: $mid-gray; }
+.dark-gray { color: $dark-gray; }
+
+.bg-white { background-color: white; }
+.bg-blue { background-color: $blue; }
+.bg-dark-blue { background-color: $dark-blue; }
+.bg-light-gray { background-color: $light-gray; }
+.bg-dark-gray { background-color: $dark-gray; }
+
+.btn-blue {
+  color: white;
+  background-color: $blue;
+  &:hover {
+    color: white;
+    background-color: saturate($blue, 40%);
+  }
+}
+
+.rounded { border-radius: .25*$space; }
