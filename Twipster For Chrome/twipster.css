@@ -30,16 +30,17 @@
   display: none !important;
 }
 
-/* Attempting to hide inline media */
+/* Hide inline media */
 .cards-media-container,
 .card2 {
   display: none !important;
 }
 .expanding-stream-item.open .cards-media-container,
-.expanding-stream-item.open .card2 {
+.permalink-tweet .cards-media-container,
+.expanding-stream-item.open .card2,
+.permalink-tweet .card2 {
   display: block !important;
 }
-
 
     
 /* Tweets Without Borders */
