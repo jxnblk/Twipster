@@ -26,9 +26,20 @@
 
 
 /* Hide things */
-.trends, .topics, .bird-topbar-etched, .wtf-module, .site-footer, .mini-profile, .enhanced-media-thumbnails, .expand-action-wrapper, .close-all-tweets, .content-header, .expand-stream-item, .collapse-stream-item, .details.with-icn i, .list-link .chev-right, .dashboard .avatar-row, .dashboard .media-row, .promptbird, .promoted-tweet, .front-signup div.placeholding-input, .front-container .footer, .front-bg, .front-welcome, .media-thumbnail.is-preview, .details {
+.trends, .topics, .bird-topbar-etched, .wtf-module, .site-footer, .mini-profile, .enhanced-media-thumbnails, .expand-action-wrapper, .close-all-tweets, .content-header, .list-link .chev-right, .dashboard .avatar-row, .dashboard .media-row, .promptbird, .promoted-tweet {
   display: none !important;
 }
+
+/* Attempting to hide inline media */
+.cards-media-container,
+.card2 {
+  display: none !important;
+}
+.expanding-stream-item.open .cards-media-container,
+.expanding-stream-item.open .card2 {
+  display: block !important;
+}
+
 
     
 /* Tweets Without Borders */
@@ -71,7 +82,7 @@
 }
 
 body {
-  background-image: none !important;
+  /*background-image: none !important;*/
   background-color: #fff !important;
 }
 
@@ -138,7 +149,7 @@ body {
 }
 
 .tweet {
-  padding: 16px 12px !important;
+  /*padding: 8px 12px !important;*/
 }
 
 .tweet-box {
@@ -200,13 +211,15 @@ padding-bottom: 80px !important;
 }
 
 .tweet-actions {
+  box-shadow: none !important;
+  background: none !important;
+}
+.stream-item-footer {
   opacity: 0 !important;
   transition: opacity .2s ease;
 }
 
-.tweet:hover .tweet-actions {
-  box-shadow: none !important;
-  background: none !important;
+.tweet:hover .stream-item-footer {
   opacity: 1 !important;
 }
 
@@ -258,52 +271,5 @@ padding-bottom: 80px !important;
 
 .dm-message {
   max-width: none !important;
-}
-
-
-/*  ----------------------------------------------------------------
-    Front Page */
-
-.front-card {
-  max-width: 100% !important;
-  left: 0 !important;
-  margin: 0 !important;
-  position: relative !important;
-  margin: 48px auto !important;
-}
-
-.front-signin {
-  background: none !important;
-  border: none !important;
-  -webkit-box-shadow: none !important;
-  -moz-box-shadow: none !important;
-  box-shadow: none !important;
-  position: relative !important;
-  left: auto !important;
-  margin: 0 auto !important;
-}
-
-.front-signup {
-  left: auto !important;
-  right: auto !important;
-  top: auto !important;
-  width: auto !important;
-  height: 100px !important;
-  position: relative !important;
-  background: none !important;
-  -webkit-box-shadow: none !important;
-  -moz-box-shadow: none !important;
-  box-shadow: none !important;
-  margin: 20px auto !important;
-  width: 300px !important;
-  border: 1px solid #e2e2e2 !important;
-}
-
-.signup-btn {
-  margin: 15px 10px !important;
-  left: auto !important;
-  right: auto !important;
-  width: auto !important;
-  position: relative !important;
 }
 
