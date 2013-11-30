@@ -5,7 +5,7 @@
   "description": "Simpler, Readabler Twitter",
   "icons": {  "48": "icon48.png",
               "128": "icon128.png" },
-  "version": "1.5",
+  "version": "1.6",
   "homepage_url": "http://jxnblk.com/twipster",
 
   "content_scripts": [
