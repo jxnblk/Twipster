@@ -26,7 +26,7 @@
 
 
 /* Hide things */
-.trends, .topics, .bird-topbar-etched, .wtf-module, .site-footer, .mini-profile, .enhanced-media-thumbnails, .expand-action-wrapper, .close-all-tweets, .content-header, .list-link .chev-right, .dashboard .avatar-row, .dashboard .media-row, .promptbird, .promoted-tweet, .Footer {
+.trends, .topics, .bird-topbar-etched, .wtf-module, .site-footer, .mini-profile, .enhanced-media-thumbnails, .expand-action-wrapper, .close-all-tweets, .content-header, .list-link .chev-right, .dashboard .avatar-row, .dashboard .media-row, .promptbird, .promoted-tweet, .Footer, .js-nav-links .Icon {
   display: none !important;
 }
 
@@ -83,7 +83,7 @@
 }
 
 body {
-  /*background-image: none !important;*/
+  background-image: none !important;
   background-color: #fff !important;
 }
 
@@ -91,48 +91,16 @@ body {
 /*  ----------------------------------------------------------------
     Navigation */
 
-.global-nav {
-  width: 100% !important;
-  margin: 0 auto !important;
-  background-image: none !important;
-  background-color: #fff !important;
-}
-
-.global-nav-inner {
-  width: 100% !important;
-  max-width: 56em !important;
-  margin: 0 auto !important;
-}
-
-.global-nav .container {
-  width: 100% !important;
-  min-width: 1rem !important;
-}
-
-.topbar-tweet-btn {
-  margin-right: 0px !important;
-}
-
-.topbar {
-  box-shadow: none !important;
-}
-
-.global-nav .search-input {
-  color: #fff !important;
-  background: #444 !important;
-}
-
 .js-nav-links li {
   display: inline-block !important;
-  background-color: #fff !important;
-  padding: 10px !important;
-  margin-bottom: -10px !important;
 }
+
 
 .module .list-link {
   background: none !important;
   border: none !important;
 }
+
 
 
 /*  ----------------------------------------------------------------
@@ -150,10 +118,6 @@ body {
 
 .permalink-tweet, .permalink-tweet:hover {
   background: #fff !important;
-}
-
-.tweet {
-  /*padding: 8px 12px !important;*/
 }
 
 .tweet-box {
