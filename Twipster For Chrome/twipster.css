@@ -95,7 +95,7 @@ body {
   width: 100% !important;
   margin: 0 auto !important;
   background-image: none !important;
-  background-color: #333 !important;
+  background-color: #fff !important;
 }
 
 .global-nav-inner {
@@ -124,6 +124,9 @@ body {
 
 .js-nav-links li {
   display: inline-block !important;
+  background-color: #fff !important;
+  padding: 10px !important;
+  margin-bottom: -10px !important;
 }
 
 .module .list-link {
