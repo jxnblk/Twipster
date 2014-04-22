@@ -103,6 +103,15 @@ body.ProfilePage {
   border: none !important;
 }
 
+/*
+ * Testing styling search input
+.global-nav .search-input {
+  background-color: #eee !important;
+}
+.global-nav .search-input::-webkit-input-placeholder {
+  color: #777 !important;
+}
+*/
 
 
 /*  ----------------------------------------------------------------
