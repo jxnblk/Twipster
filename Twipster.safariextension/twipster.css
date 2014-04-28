@@ -26,7 +26,7 @@
 
 
 /* Hide things */
-.trends, .topics, .bird-topbar-etched, .wtf-module, .site-footer, .mini-profile, .enhanced-media-thumbnails, .expand-action-wrapper, .close-all-tweets, .content-header, .list-link .chev-right, .dashboard .avatar-row, .dashboard .media-row, .promptbird, .promoted-tweet, .Footer, .js-nav-links .Icon {
+.trends, .topics, .bird-topbar-etched, .wtf-module, .site-footer, .mini-profile, .enhanced-media-thumbnails, .expand-action-wrapper, .close-all-tweets, .content-header, .list-link .chev-right, .dashboard .avatar-row, .dashboard .media-row, .promptbird, .promoted-tweet, .Footer, .js-nav-links .Icon, .DashboardProfileCard, .WhoToFollow {
   display: none !important;
 }
 
@@ -82,7 +82,8 @@
   width: 100% !important;
 }
 
-body {
+body,
+body.ProfilePage {
   background-image: none !important;
   background-color: #fff !important;
 }
@@ -95,10 +96,22 @@ body {
   display: inline-block !important;
 }
 
-.module .list-link {
+
+.module .list-link,
+.ProfileTweet {
   background: none !important;
   border: none !important;
 }
+
+/*
+ * Testing styling search input
+.global-nav .search-input {
+  background-color: #eee !important;
+}
+.global-nav .search-input::-webkit-input-placeholder {
+  color: #777 !important;
+}
+*/
 
 
 /*  ----------------------------------------------------------------
