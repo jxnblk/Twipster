@@ -24,6 +24,31 @@
   line-height: 24px !important;
 }
 
+/* EDIT 11.04.2014 – Disable SUIT Grid */
+.Grid {
+	font-size: inherit !important;
+}
+.ProfileSidebar,
+.Grid--withGutter {
+	margin: 0 !important;
+}
+.Grid-cell {
+	display: block !important;
+	padding: 0 !important;
+}
+.Grid-cell.u-size1of4,
+.Grid-cell.u-size1of2,
+.Grid-cell.u-size3of4, {
+	width: auto !important;
+}
+/* Disable Profile canopy */
+.ProfileCanopy.is-locked .ProfileCanopy-inner {
+	position: static !important;
+}
+.ProfileCanopy-header {
+	margin-top: 0 !important;
+}
+
 
 /* Hide things */
 .trends, .topics, .bird-topbar-etched, .wtf-module, .site-footer, .mini-profile, .enhanced-media-thumbnails, .expand-action-wrapper, .close-all-tweets, .content-header, .list-link .chev-right, .dashboard .avatar-row, .dashboard .media-row, .promptbird, .promoted-tweet, .Footer, .js-nav-links .Icon, .DashboardProfileCard, .WhoToFollow {
