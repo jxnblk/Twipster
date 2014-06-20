@@ -207,6 +207,8 @@ body {
   color: #fff !important;
 }
 
+.signup-call-out div.flex-module div.holding {display: inline-block !important;}
+.signup-call-out div.flex-module div.holding input {width: 200px !important;}
 
 /*  ----------------------------------------------------------------
     Modals */
