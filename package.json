@@ -14,6 +14,7 @@
   "homepage": "https://github.com/jxnblk/Twipster",
   "devDependencies": {
     "gulp-rename": "^1.2.0",
-    "gulp": "^3.8.8"
+    "gulp": "^3.8.8",
+    "gulp-zip": "^2.0.2"
   }
 }

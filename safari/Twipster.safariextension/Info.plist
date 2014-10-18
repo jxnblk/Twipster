@@ -48,7 +48,7 @@
 		</dict>
 	</dict>
 	<key>Update Manifest URL</key>
-	<string>http://jxnblk.com/Twipster/twipster-updates.plist</string>
+	<string>http://jxnblk.com/Twipster/safari/Update.plist</string>
 	<key>Website</key>
 	<string>http://github.com/jxnblk/Twipster</string>
 </dict>
