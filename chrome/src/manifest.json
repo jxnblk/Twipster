@@ -1,13 +1,12 @@
 {
   "manifest_version": 2,
-
   "name": "Twipster",
   "description": "Simpler, Readabler Twitter",
-  "icons": {  "48": "icon48.png",
-              "128": "icon128.png" },
-  "version": "1.9",
-  "homepage_url": "http://jxnblk.com/twipster",
-
+  "icons": { 
+    "48": "icon48.png",
+    "128": "icon128.png" },
+  "version": "2.0.0",
+  "homepage_url": "http://github.com/jxnblk/Twipster",
   "content_scripts": [
     {
       "matches": ["*://*.twitter.com/*"],

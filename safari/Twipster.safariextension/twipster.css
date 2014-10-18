@@ -1,0 +1,140 @@
+/*
+ * Twipster
+ * Chrome and Safari extensions for a more readable Twitter experience
+ *
+ * http://jxnblk.com/Twipster
+ *
+ */
+
+
+/* Tweet text styles */
+.tweet-text,
+.ProfileTweet-text {
+  font-family: Georgia !important;
+  font-size: 20px !important;
+  line-height: 1.5 !important;
+  color: #444 !important;
+  margin-bottom: 0.25em !important;
+}
+
+
+/* Compose tweet field */
+.tweet-box {
+  font-size: 18px !important;
+  line-height: 24px !important;
+}
+
+/* Hide modules and promotions */
+.trends, /* Trends module */
+.enhanced-media-thumbnails, /* Inline images */
+.content-header, /* Tweets column header */
+.promoted-tweet, /* Promoted tweets */
+.Footer, /* Site footer */
+.site-footer,
+.DashboardProfileCard, /* Profile card on home */
+.WhoToFollow, /* Who to follow module */
+.wtf-module {
+  display: none !important;
+}
+
+/* Hide inline media */
+.cards-media-container,
+.card2 {
+  display: none !important;
+}
+
+/* Show media when expanded or in detail view */
+.expanding-stream-item.open .cards-media-container,
+.permalink-tweet .cards-media-container,
+.expanding-stream-item.open .card2,
+.permalink-tweet .card2 {
+  display: block !important;
+}
+
+    
+/* Remove Borders */
+.stream-item,
+.tweet,
+.stream-loading,
+.stream-end,
+.new-tweets-bar,
+.module {
+  border: none !important;
+}
+
+.stream-item-activity-me {
+  border-bottom: none !important;
+}
+
+.user-similarities-list {
+  border: 1px solid rgba(0,0,0,.1) !important;
+  overflow: hidden !important;
+}
+
+
+/* Single Column Layout */
+
+.wrapper-settings .content-header {
+  display: block !important;
+}
+ 
+.wrapper,
+.wrapper-narrow,
+.wrapper-permalink {
+  background: none !important;
+  width: 90% !important;
+  max-width: 56em !important;
+}
+ 
+.dashboard,
+.content-main {
+  float: none !important;
+  width: 100% !important;
+}
+
+/* Subnavigation */
+.module ul li {
+  display: inline-block !important;
+}
+.module ul li .Icon--caretRight {
+  display: none !important;
+}
+.list-link {
+  border: 0 !important;
+}
+
+/* White background */
+body,
+body.ProfilePage {
+  background-image: none !important;
+  background-color: #fff !important;
+}
+
+
+/* Compose Tweet Modal */
+
+.tweet-box {
+  width: 95% !important;
+  height: auto !important;
+  min-height: 80px !important;
+  padding: 8px 2.5% !important;
+}
+
+.tweet-form.has-preview.has-thumbnail .tweet-box {
+  padding-bottom: 80px !important;
+}
+
+.tweet-form .thumbnail-container {
+  width: auto !important;
+}
+
+
+/* Modals */
+.modal {
+  width: 90% !important;
+  max-width: 56em !important;
+  left: 0 !important;
+  right: 0 !important;
+  margin: 0 auto !important;
+}
+
