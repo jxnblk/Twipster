@@ -92,6 +92,16 @@
   width: 100% !important;
 }
 
+/* Subnavigation */
+.module ul li {
+  display: inline-block !important;
+}
+.module ul li .Icon--caretRight {
+  display: none !important;
+}
+.list-link {
+  border: 0 !important;
+}
 
 /* White background */
 body,
