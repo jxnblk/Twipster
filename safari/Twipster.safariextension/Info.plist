@@ -5,7 +5,7 @@
 	<key>Author</key>
 	<string>Brent Jackson</string>
 	<key>Builder Version</key>
-	<string>8536.26.17</string>
+	<string>10600.1.25</string>
 	<key>CFBundleDisplayName</key>
 	<string>Twipster</string>
 	<key>CFBundleIdentifier</key>
@@ -13,7 +13,7 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.3</string>
+	<string>2.0</string>
 	<key>CFBundleVersion</key>
 	<string>4</string>
 	<key>Chrome</key>
@@ -29,6 +29,8 @@
 	</dict>
 	<key>Description</key>
 	<string>Simpler, More Readable Styles for Twitter.com</string>
+	<key>DeveloperIdentifier</key>
+	<string>36T97MXRKC</string>
 	<key>ExtensionInfoDictionaryVersion</key>
 	<string>1.0</string>
 	<key>Permissions</key>
@@ -46,8 +48,8 @@
 		</dict>
 	</dict>
 	<key>Update Manifest URL</key>
-	<string>http://jxnblk.com/twipster/twipster-updates.plist</string>
+	<string>http://jxnblk.com/Twipster/safari/Update.plist</string>
 	<key>Website</key>
-	<string>http://jxnblk.com/twipster</string>
+	<string>http://github.com/jxnblk/Twipster</string>
 </dict>
 </plist>

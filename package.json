@@ -1,0 +1,20 @@
+{
+  "name": "Twipster",
+  "version": "2.0.0",
+  "description": "Chrome extension for a simpler, more readable Twitter experience",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jxnblk/Twipster.git"
+  },
+  "author": "Brent Jackson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jxnblk/Twipster/issues"
+  },
+  "homepage": "https://github.com/jxnblk/Twipster",
+  "devDependencies": {
+    "gulp-rename": "^1.2.0",
+    "gulp": "^3.8.8",
+    "gulp-zip": "^2.0.2"
+  }
+}
