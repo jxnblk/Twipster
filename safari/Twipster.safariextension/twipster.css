@@ -7,7 +7,6 @@
  
     ------------------------------------------------- */
 
-
 /* Change the font used for tweets here */
 .js-tweet-text {
   font-family: Georgia !important;
@@ -15,6 +14,7 @@
   line-height: 1.5 !important;
   color: #444 !important;
   margin-bottom: 0.25em !important;
+  -webkit-transition: all .1s linear !important;
 }
 
 
@@ -26,8 +26,20 @@
 
 
 /* Hide things */
-.trends, .topics, .bird-topbar-etched, .wtf-module, .site-footer, .mini-profile, .enhanced-media-thumbnails, .expand-action-wrapper, .close-all-tweets, .content-header, .expand-stream-item, .collapse-stream-item, .details.with-icn i, .list-link .chev-right, .dashboard .avatar-row, .dashboard .media-row, .promptbird, .promoted-tweet, .front-signup div.placeholding-input, .front-container .footer, .front-bg, .front-welcome {
+.trends, .topics, .bird-topbar-etched, .wtf-module, .site-footer, .mini-profile, .enhanced-media-thumbnails, .expand-action-wrapper, .close-all-tweets, .content-header, .list-link .chev-right, .dashboard .avatar-row, .dashboard .media-row, .promptbird, .promoted-tweet, .Footer, .js-nav-links .Icon, .DashboardProfileCard, .WhoToFollow {
   display: none !important;
+}
+
+/* Hide inline media */
+.cards-media-container,
+.card2 {
+  display: none !important;
+}
+.expanding-stream-item.open .cards-media-container,
+.permalink-tweet .cards-media-container,
+.expanding-stream-item.open .card2,
+.permalink-tweet .card2 {
+  display: block !important;
 }
 
     
@@ -70,7 +82,8 @@
   width: 100% !important;
 }
 
-body {
+body,
+body.ProfilePage {
   background-image: none !important;
   background-color: #fff !important;
 }
@@ -79,45 +92,26 @@ body {
 /*  ----------------------------------------------------------------
     Navigation */
 
-.global-nav {
-  width: 100% !important;
-  margin: 0 auto !important;
-  background-image: none !important;
-  background-color: #333 !important;
-}
-
-.global-nav-inner {
-  width: 100% !important;
-  max-width: 56em !important;
-  margin: 0 auto !important;
-}
-
-.global-nav .container {
-  width: 100% !important;
-  min-width: 1rem !important;
-}
-
-.topbar-tweet-btn {
-  margin-right: 0px !important;
-}
-
-.topbar {
-  box-shadow: none !important;
-}
-
-.global-nav .search-input {
-  color: #fff !important;
-  background: #444 !important;
-}
-
 .js-nav-links li {
   display: inline-block !important;
 }
 
-.module .list-link {
+
+.module .list-link,
+.ProfileTweet {
   background: none !important;
   border: none !important;
 }
+
+/*
+ * Testing styling search input
+.global-nav .search-input {
+  background-color: #eee !important;
+}
+.global-nav .search-input::-webkit-input-placeholder {
+  color: #777 !important;
+}
+*/
 
 
 /*  ----------------------------------------------------------------
@@ -187,13 +181,30 @@ padding-bottom: 80px !important;
   background-color:  #aaa !important;
 }
 
+.content-main .in-reply-to {
+  background: #fcfcfc !important;
+}
+
+.tweet-row {
+  max-width: 100% !important;
+}
+
+.tweet-actions {
+  box-shadow: none !important;
+  background: none !important;
+}
+.stream-item-footer {
+  opacity: 0 !important;
+  transition: opacity .2s ease;
+}
+
+.tweet:hover .stream-item-footer {
+  opacity: 1 !important;
+}
+
 .tweet-actions a {
   margin-left: 0 !important;
   margin-right: 8px !important;
-}
-
-.content-main .in-reply-to {
-  background: #fcfcfc !important;
 }
 
 
@@ -239,52 +250,5 @@ padding-bottom: 80px !important;
 
 .dm-message {
   max-width: none !important;
-}
-
-
-/*  ----------------------------------------------------------------
-    Front Page */
-
-.front-card {
-  max-width: 100% !important;
-  left: 0 !important;
-  margin: 0 !important;
-  position: relative !important;
-  margin: 48px auto !important;
-}
-
-.front-signin {
-  background: none !important;
-  border: none !important;
-  -webkit-box-shadow: none !important;
-  -moz-box-shadow: none !important;
-  box-shadow: none !important;
-  position: relative !important;
-  left: auto !important;
-  margin: 0 auto !important;
-}
-
-.front-signup {
-  left: auto !important;
-  right: auto !important;
-  top: auto !important;
-  width: auto !important;
-  height: 100px !important;
-  position: relative !important;
-  background: none !important;
-  -webkit-box-shadow: none !important;
-  -moz-box-shadow: none !important;
-  box-shadow: none !important;
-  margin: 20px auto !important;
-  width: 300px !important;
-  border: 1px solid #e2e2e2 !important;
-}
-
-.signup-btn {
-  margin: 15px 10px !important;
-  left: auto !important;
-  right: auto !important;
-  width: auto !important;
-  position: relative !important;
 }
 

@@ -7,7 +7,6 @@
  
     ------------------------------------------------- */
 
-
 /* Change the font used for tweets here */
 .js-tweet-text {
   font-family: Georgia !important;
@@ -15,7 +14,9 @@
   line-height: 1.5 !important;
   color: #444 !important;
   margin-bottom: 0.25em !important;
+  -webkit-transition: all .1s linear !important;
 }
+
 
 /* Readable compose fields */
 .tweet-box {
@@ -23,31 +24,40 @@
   line-height: 24px !important;
 }
 
-body {
-  background-image: none !important;
-  background-color: #fff !important;
-}
 
 /* Hide things */
-.trends, .topics, .bird-topbar-etched, .wtf-module, .site-footer, .mini-profile, .enhanced-media-thumbnails, .expand-action-wrapper, .close-all-tweets, .content-header, .expand-stream-item, .collapse-stream-item, .details.with-icn i, .list-link .chev-right, .dashboard .avatar-row, .dashboard .media-row, .promptbird, .promoted-tweet, .front-signup div.placeholding-input, .front-container .footer, .front-bg, .front-welcome {
+.trends, .topics, .bird-topbar-etched, .wtf-module, .site-footer, .mini-profile, .enhanced-media-thumbnails, .expand-action-wrapper, .close-all-tweets, .content-header, .list-link .chev-right, .dashboard .avatar-row, .dashboard .media-row, .promptbird, .promoted-tweet, .Footer, .js-nav-links .Icon, .DashboardProfileCard, .WhoToFollow {
   display: none !important;
 }
 
-/* Remove Borders */
-.stream-item, .tweet, .stream-loading, .stream-end, .new-tweets-bar, .module, .module .list-link, .front-signin, .stream-item-activity-me {
+/* Hide inline media */
+.cards-media-container,
+.card2 {
+  display: none !important;
+}
+.expanding-stream-item.open .cards-media-container,
+.permalink-tweet .cards-media-container,
+.expanding-stream-item.open .card2,
+.permalink-tweet .card2 {
+  display: block !important;
+}
+
+    
+/* Tweets Without Borders */
+.stream-item, .tweet, .stream-loading, .stream-end, .new-tweets-bar, .module {
   border: none !important;
 }
 
-/* Remove Box Shadows */
-.topbar, .new-tweets-bar, .front-signin, .front-signup, .stream .tweet:hover .tweet-actions {
-  box-shadow: none !important;
+.stream-item-activity-me {
+  border-bottom: none !important;
 }
 
-/* Remove Backgrounds */
-.wrapper, .wrapper-narrow, .wrapper-permalink, .module .list-link, .front-signin, .front-signup, .stream .tweet:hover .tweet-actions {
-  background: none !important;
+.user-similarities-list {
+  border: 1px solid rgba(0,0,0,.1) !important;
+  overflow: hidden !important;
 }
-   
+
+    
 /* Lighten up secondary information */
 .username, .time, .time a, .metadata, .metadata button.btn-link, .metadata a, .with-icn, .with-icn:hover, .with-icn:focus, .context span, .context a.pretty-link b, .account-group span, .account-group s, .account-group strong {
   color: #aaa !important;
@@ -60,51 +70,48 @@ body {
 .wrapper-settings .content-header {
   display: block !important;
 }
-
+ 
 .wrapper, .wrapper-narrow, .wrapper-permalink {
+  background: none !important;
   width: 90% !important;
   max-width: 56em !important;
 }
-
-.dashboard, .content-main, .global-nav, .global-nav-inner, .global-nav .container, .profile-card.profile-header, .profile-header-inner-overlay {
+ 
+.dashboard, .content-main {
+  float: none !important;
   width: 100% !important;
 }
 
-.dashboard, .content-main {
-  float: none !important;
+body,
+body.ProfilePage {
+  background-image: none !important;
+  background-color: #fff !important;
 }
 
 
 /*  ----------------------------------------------------------------
     Navigation */
 
-.global-nav {
-  margin: 0 auto !important;
-  background-image: none !important;
-  background-color: #333 !important;
-}
-
-.global-nav-inner {
-  max-width: 56em !important;
-  margin: 0 auto !important;
-}
-
-.global-nav .container {
-  min-width: 1rem !important;
-}
-
-.topbar-tweet-btn {
-  margin-right: 0px !important;
-}
-
-.global-nav .search-input {
-  color: #fff !important;
-  background: #444 !important;
-}
-
 .js-nav-links li {
   display: inline-block !important;
 }
+
+
+.module .list-link,
+.ProfileTweet {
+  background: none !important;
+  border: none !important;
+}
+
+/*
+ * Testing styling search input
+.global-nav .search-input {
+  background-color: #eee !important;
+}
+.global-nav .search-input::-webkit-input-placeholder {
+  color: #777 !important;
+}
+*/
 
 
 /*  ----------------------------------------------------------------
@@ -113,9 +120,14 @@ body {
 .new-tweets-bar {
   background: #f2fafc !important;
   border-radius: .25rem !important;
+  box-shadow: none !important;
 }
 
-.tweet:hover, .permalink-tweet, .permalink-tweet:hover {
+.tweet:hover {
+  background: #fff !important;
+}
+
+.permalink-tweet, .permalink-tweet:hover {
   background: #fff !important;
 }
 
@@ -127,7 +139,7 @@ body {
 }
 
 .tweet-form.has-preview.has-thumbnail .tweet-box {
-  padding-bottom: 80px !important;
+padding-bottom: 80px !important;
 }
 
 .tweet-form .thumbnail-container {
@@ -157,33 +169,42 @@ body {
   background-position: -280px -190px !important;
 }
 
-.permalink-tweet .sm-reply, .permalink-tweet:hover .sm-reply, .permalink-tweet.focus .sm-reply {
-  background-position: 0 -280px !important;
-}
+.permalink-tweet .sm-reply, .permalink-tweet:hover .sm-reply, .permalink-tweet.focus .sm-reply { background-position: 0 -280px !important; }
 
-.permalink-tweet .sm-rt, .permalink-tweet:hover .sm-rt, .permalink-tweet.focus .sm-rt {
-  background-position: -30px -280px !important;
-}
+.permalink-tweet .sm-rt, .permalink-tweet:hover .sm-rt, .permalink-tweet.focus .sm-rt { background-position: -30px -280px !important; }
 
-.permalink-tweet .sm-fav, .permalink-tweet:hover .sm-fav, .permalink-tweet.focus .sm-fav {
-  background-position: -60px -280px !important;
-}
+.permalink-tweet .sm-fav, .permalink-tweet:hover .sm-fav, .permalink-tweet.focus .sm-fav { background-position: -60px -280px !important; }
 
-.permalink-tweet .sm-more, .permalink-tweet:hover .sm-more {
-  background-position: -180px -280px !important;
-}
+.permalink-tweet .sm-more, .permalink-tweet:hover .sm-more { background-position: -180px -280px !important; }
 
 .tweet .sm-reply, .tweet .sm-rt, .tweet .sm-fav, .tweet .sm-image, .tweet .sm-video, .tweet .sm-audio, .tweet .sm-geo, .tweet .sm-in, .tweet .sm-trash, .tweet .sm-more, .tweet .sm-page, .tweet .sm-embed, .tweet .sm-summary, .tweet .sm-chat, .timelines-navigation .active .profile-nav-icon, .timelines-navigation .profile-nav-icon:hover, .timelines-navigation .profile-nav-link:focus .profile-nav-icon, .sm-top-tweet, .metadata a.tweet-geo-text:hover .sm-geo, .discover-item .js-action-card-search:hover .sm-search, .discover-item .js-action-card-search:focus .sm-search {
   background-color:  #aaa !important;
 }
 
+.content-main .in-reply-to {
+  background: #fcfcfc !important;
+}
+
+.tweet-row {
+  max-width: 100% !important;
+}
+
+.tweet-actions {
+  box-shadow: none !important;
+  background: none !important;
+}
+.stream-item-footer {
+  opacity: 0 !important;
+  transition: opacity .2s ease;
+}
+
+.tweet:hover .stream-item-footer {
+  opacity: 1 !important;
+}
+
 .tweet-actions a {
   margin-left: 0 !important;
   margin-right: 8px !important;
-}
-
-.content-main .in-reply-to {
-  background: #fcfcfc !important;
 }
 
 
@@ -192,6 +213,14 @@ body {
 
 .profile-card {
   border: 1px solid rgba(0,0,0,.1) !important;
+}
+
+.profile-card.profile-header {
+  width: 100% !important;
+}
+
+.profile-header-inner-overlay {
+  width: 100% !important;
 }
 
 .profile-card.profile-header .profile-header-inner {
@@ -223,31 +252,3 @@ body {
   max-width: none !important;
 }
 
-
-/*  ----------------------------------------------------------------
-    Front Page */
-
-.front-card, .front-sign-in, .front-signup, .signup-btn {
-  position: relative !important;
-  left: 0 !important;
-}
-
-.front-card {
-  max-width: 100% !important;
-  margin: 48px auto !important;
-}
-
-.front-signin {
-  margin: 0 auto !important;
-}
-
-.front-signup {
-  top: 0 !important;
-  max-height: 100px !important;
-  margin: 40px auto !important;
-  border: none !important;
-}
-
-.signup-btn {
-  margin: 15px 10px !important;
-}
