@@ -27,7 +27,6 @@
 /* Hide modules and promotions */
 .trends, /* Trends module */
 .promptbird, /* Prompt above timeline */
-.enhanced-media-thumbnails, /* Inline images */
 .content-header, /* Tweets column header */
 .promoted-tweet, /* Promoted tweets */
 .Footer, /* Site footer */
@@ -35,12 +34,6 @@
 .DashboardProfileCard, /* Profile card on home */
 .WhoToFollow, /* Who to follow module */
 .wtf-module {
-  display: none !important;
-}
-
-/* Hide inline media */
-.cards-media-container,
-.card2 {
   display: none !important;
 }
 
