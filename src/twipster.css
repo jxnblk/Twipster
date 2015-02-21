@@ -25,6 +25,7 @@
 }
 
 /* Hide modules and promotions */
+.timeline-tweet-box, /* Tweet box atop the timeline */
 .trends, /* Trends module */
 .promptbird, /* Prompt above timeline */
 .enhanced-media-thumbnails, /* Inline images */
@@ -52,7 +53,7 @@
   display: block !important;
 }
 
-    
+
 /* Remove Borders */
 .stream-item,
 .tweet,
@@ -78,7 +79,7 @@
 .wrapper-settings .content-header {
   display: block !important;
 }
- 
+
 .wrapper,
 .wrapper-narrow,
 .wrapper-permalink {
@@ -86,7 +87,7 @@
   width: 90% !important;
   max-width: 56em !important;
 }
- 
+
 .dashboard,
 .content-main {
   float: none !important;
@@ -138,4 +139,3 @@ body.ProfilePage {
   right: 0 !important;
   margin: 0 auto !important;
 }
-
