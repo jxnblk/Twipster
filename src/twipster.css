@@ -88,7 +88,9 @@
 }
  
 .dashboard,
-.content-main {
+.content-main,
+.QuickPromoteDialog,
+.quick-promote-iframe{
   float: none !important;
   width: 100% !important;
 }
