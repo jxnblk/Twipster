@@ -139,3 +139,7 @@ body.ProfilePage {
   margin: 0 auto !important;
 }
 
+/* Quoted text */
+.QuoteTweet-text {
+  max-height: 90px !important;
+}
