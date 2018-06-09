@@ -1,12 +1,8 @@
 Twipster
 ========
 
-Chrome and Safari browser extensions for simpler and more readable Twitter styles.
+**No longer maintained**
 
-![Screenshot](site/screenshot.png)
-
-## Install
-
-http://jxnblk.com/Twipster
-
-
+See these alternatives:
+- [Twitter Lite](https://mobile.twitter.com)
+- [Refined Twitter](https://github.com/sindresorhus/refined-twitter)
